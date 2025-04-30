@@ -7,16 +7,22 @@ import './App.css';
 import Home from './Home'
 import Navebar from './Navebar';
 import Cart from './Cart';
-import RagistrPadg from './RagistrPadg'
-import LoginPadg from './LoginPadg'
-import ChackOut from './ChackOut'
-import Footer from './Footer'
+import RagistrPadg from './RagistrPadg';
+import LoginPadg from './LoginPadg';
+import ChackOut from './ChackOut';
+import Footer from './Footer';
+import { ProductProvider } from './ProductContext'; // لو في مجلد ثاني عدل المسار
+
+
 
 
 
 function App() {
   return (
+
     <BrowserRouter>
+        <ProductProvider>
+
     <Navebar/>
       <Routes>
                 <Route path="/" element={<Home />} />
@@ -28,6 +34,8 @@ function App() {
       <Route path="/Footer" element={<Footer />} />
       </Routes>
       <Footer/>
+      </ProductProvider>
+
     </BrowserRouter>
   );
 }
