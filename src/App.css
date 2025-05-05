@@ -201,6 +201,12 @@ body{
     margin: 0px 3px;
     width: 97%;
   }
+  .deacpn{
+    display:flex;
+  }
+  .deacp{
+    display:none;
+  }
 }
 
 /* الحجم لللاب توب */
@@ -208,6 +214,12 @@ body{
   .product img{
     margin: 0px 3px;
     width: auto;
+  }
+  .deacpn{
+    display: none;
+  }
+  .deacp{
+    display:flex;
   }
 }
   
