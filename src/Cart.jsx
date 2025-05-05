@@ -10,10 +10,7 @@ import ChackOut from './ChackOut';
 const Cart = () => {
   const { Cart, setCart } = useContext(ProductContext);
 
-  
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(Cart));
-  }, [Cart]);
+
 
   // زيادة الكمية
   const increaseQuantity = (productId) => {
