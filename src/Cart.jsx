@@ -10,14 +10,7 @@ import ChackOut from './ChackOut';
 const Cart = () => {
   const { Cart, setCart } = useContext(ProductContext);
 
-  // حفظ السلة في localStorage بعد التعديل
-  useEffect(() => {
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    }
-  }, [setCart]);
-
+  
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(Cart));
   }, [Cart]);
