@@ -26,9 +26,22 @@ const Home = () => {
           <div className="productname">
           {products.title}
           <div className='btnpr'>
-        <p> price:{ products.price}</p>
-        <Button variant="outline-danger"  onClick={()=>handleaddtocart(products)}>Cart 
-        <FaCartPlus  size="12px" />        </Button>      </div>
+        <p> { products.price}</p>
+                          <button onClick={()=>handleaddtocart(products)}
+                            style={{
+                              fontWeight: 'bold',
+                              fontSize: '12px',
+                              textAlign: 'center',
+                              padding: '3px 10px',
+                              borderRadius: '5px',
+                              border: '1px solid #4d9091',
+                              background: '#4d9091',
+                              color: '#ffff',
+                            }}
+                          >
+                            Add to cart
+                          </button>
+          </div>
         </div>
         </div>
       )
