@@ -15,6 +15,7 @@ import Cart from './Cart'
 import RagistrPadg from './RagistrPadg'
 import LoginPadg from './LoginPadg'
 import ChackOut from './ChackOut'
+import './index.css';
 
 
 function Navebar() {
@@ -25,25 +26,24 @@ function Navebar() {
             <Container fluid>
                 <Navbar.Brand href="#" id="logo">Al Mansouri
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                <Navbar.Toggle id='btn' aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Offcanvas style={{width:'60%'}}
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
             >
-                <Offcanvas.Header closeButton className='OffcanvasBody'>
-                    <Offcanvas.Title  id={` offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Header closeButton className='OffcanvasBody ' >
+                    <Offcanvas.Title  id={` offcanvasNavbarLabel-expand-${expand} `}>
                     <Navbar.Brand href="#" id="logo">Al Mansouri
-                    </Navbar.Brand>                  </Offcanvas.Title>
+                    </Navbar.Brand> </Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body className="OffcanvasBody">
+                <Offcanvas.Body className="OffcanvasBody" >
                     <Nav className="justify-content-center flex-grow-1 pe-3">
                     <Link closeButton className='OffcanvasBody' id="linkn" to="/"> Home</Link>
                     <Link closeButton id="linkn" to="#">Adout</Link>
                     <NavDropdown
-                    id="nav-dropdown-dark-example"
+                    id="linkn"
                     title="Hadiths"
-                    menuVariant="dark"
                 >
                 <NavDropdown.Item href="/InputPage">elctron</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
