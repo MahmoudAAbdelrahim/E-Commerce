@@ -1,12 +1,12 @@
 :root{
-  --body-color: #f3ebeb;
-  --dark-color: black;
+  --body-color:#f3f0ea;
+  --dark-color: #000000;
   --text-color: #1976d2;
   --dark-red: #9c2014;
   --border-color: #212529;
   --name-item: #212529;
 }
-.body{
+body{
   background-color: var(--body-color);
 }
 #Navbar{
@@ -143,6 +143,17 @@
   align-items: stretch;
   margin: 0 10px;
   justify-content: center;
+}
+
+.custom-table td,
+.custom-table th,
+.custom-table tr {
+  background-color: #fbfbf5 !important; /* لون بيج فاتح مثال */
+  color: #000 !important; /* لون النص */
+}
+.custom-table{
+  border-radius: 600px !important;
+
 }
 .producthome{
   display: flex;
