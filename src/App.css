@@ -58,9 +58,46 @@ body{
   color: #9c2014;
 }
 
-
-
-
+.discountProducts{
+  width: 180px;
+  border: 1px solid #ddd;
+  border-Radius: 10px;
+  overflow: hidden;
+  box-Shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position:relative;
+  background-Color:#fff;
+}
+.discount{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  background-Color: #ff4747;
+  color: #fff;
+  padding: 4px 8px;
+  font-Size:12px;
+  border-Radius:5px;
+}
+.detilsimg{
+  width: 100%;
+  height: 150px;
+  object-Fit: cover;
+}
+.detilsprice{
+  padding: 10px; 
+  text-Align:center;
+}
+.detilsoldprice{
+  margin: 5px 0; 
+  font-Size: 14px; 
+  color: #999;
+  text-Decoration: line-through;
+}
+.detilsnewprice{
+  margin: 5px 0;
+  font-Size: 16px;
+  color: #28a745;
+  font-Weight: bold;
+}
 
 /**/
 
