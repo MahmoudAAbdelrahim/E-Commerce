@@ -37,7 +37,7 @@ const discountProducts = [...firstProducts, ...secondProducts, ...threProducts];
   
     return (
       <>
-        <h1>Product List</h1>
+        <h1>Product List one</h1>
         <div style={{ width: '600px', margin: 'auto' }}>
 
             {secondProducts.map((products, index) => (
