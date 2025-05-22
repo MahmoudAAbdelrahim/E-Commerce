@@ -45,7 +45,7 @@ const discountProducts = [...firstProducts, ...secondProducts, ...threProducts];
                 <img
                   src={products.thumbnail}
                   alt={`Product Image ${index}`}
-                  style={{ width: '100%', height: '350px' }}
+                  style={{ width: 'auto', height: '350px' }}
                 />
               </SwiperSlide>
             ))}
@@ -76,7 +76,7 @@ const discountProducts = [...firstProducts, ...secondProducts, ...threProducts];
                 <img
                   src={products.thumbnail}
                   alt={`Product Image ${index}`}
-                  style={{ width: '100%', height: '350px' }}
+                  style={{ width: 'auto', height: '350px' }}
                 />
               </SwiperSlide>
             ))}
