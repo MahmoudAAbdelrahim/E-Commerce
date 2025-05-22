@@ -38,7 +38,7 @@ const discountProducts = [...firstProducts, ...secondProducts, ...threProducts];
     return (
       <>
         <h1>Product List</h1>
-        <div style={{ width: '600px', margin: 'auto' }}>
+        <div style={{ width: '60%', margin: 'auto' }}>
 
             {secondProducts.map((products, index) => (
               <SwiperSlide key={index}>
@@ -63,7 +63,7 @@ const discountProducts = [...firstProducts, ...secondProducts, ...threProducts];
       ))} 
     </div>
 
-        <div style={{ width: '600px', margin: 'auto' }}>
+        <div style={{ width: '60%', margin: 'auto' }}>
           <Swiper
             modules={[Autoplay]}
             spaceBetween={10}
